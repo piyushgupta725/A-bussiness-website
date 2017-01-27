@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+<link hrefhttpsfonts.googleapis.comcssfamilyIndie+Flower" rel="stylesheet">
+<link hrefhttpsfonts.googleapis.comcssfamilyIndie+Flower|Pacifico" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image:url("http://i.imgur.com/PoWClMO.jpg");
+  background-size:cover;
+}
+div {
+  height: 400px;
+  background-size:cover;
+  position: relative;
+  margin: 50px 0 0 0;
+  border-radius: 50px;
+}
+h1 {
+  font-family: 'Kumar One', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+h2 {
+  text-align: center;
+  color: white;
+  margin: 0px 0 20px 0;
+  font-family: 'Pacifico', cursive;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 175px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/hkdij6k.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/H2f3Ss9.jpg");
+}
+.dessert{
+  background-image: url("http://i.imgur.com/O7XmvOU.jpg");
+}
+.mountains{
+  background-image:url("http://i.imgur.com/OsBnyue.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    height:250px;
+    background-size:300px 230px;
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 15px;
+    line-height:20px;
+  }
+  small {
+    font-size:12px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>AUTOMOBILES</h1>
+<h2>Top selling cars in our town</h2>
+<div class="first">
+  <p>Hyundai i20 elite <span class="price"> price - $5.6 Lac</span><br />
+  <small>The Hyundai i20 is a supermini car produced by the South Korean manufacturer Hyundai since 2008. The i20 made its debut at the Paris Motor Show in October 2008 and sits between the i10 and i30. It is a front-wheel drive car and is available in three and five-door versions.  </small></p>
+</div>
+
+<div class="second">
+<p>Volkswagen Polo <span class="price"> price - $5.4 Lac</span><br />
+  <small>The Volkswagen Polo is a supermini car produced by the German manufacturer Volkswagen since 1975. It is sold in Europe and other markets worldwide in hatchback, sedan and estate variants.The Polo has been produced in five generations with intermittent facelifts.</small></p>
+
+</div>
+
+<div class="dessert">
+<p>Maruti Suzuki Swift <span class="price"> price - $4.5 Lac</span><br />
+  <small>India’s hottest hatchback has been on sale since 2005 and received a facelift in 2014, which is the current avatar of the car sold now. Yes, we are talking about the Maruti Suzuki Swift which got a host of cosmetic updates in Europe and Japan in mid-2013 and made its way to India by the end of 2014. </small></p>
+
+</div>
+
+<div class="mountains">
+  <p>Maruti Baleno<span class="price"> price - $6.5 Lac</span><br />
+  <small>The Suzuki Baleno is a subcompact car produced by the Japanese manufacturer Suzuki since 2015. Prior to this, the "Baleno" name had been applied to the Suzuki Cultus Crescent in numerous export markets.
+The car was unveiled at the Frankfurt Motor Show in September 2015.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
